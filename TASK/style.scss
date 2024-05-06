@@ -1,0 +1,132 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  color: #fff;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+.Resume_Wrapper {
+  background: rgb(36, 0, 70);
+  background: linear-gradient(
+    90deg,
+    rgba(36, 0, 70, 1) 50%,
+    rgba(90, 24, 154, 1) 50%
+  );
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .Resume_Container {
+    h1 {
+      
+      font-size: clamp(20px ,5vw,24px);
+      font-weight: 500;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .left_Side_Wrapper {
+      h2 {
+        font-size: clamp(18px ,5vw,20px);
+        font-weight: 400;
+        color: #e0aaff;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      th {
+        background-color:  rgba(90, 24, 154, 1);
+      
+      }
+      td {
+        color: #fff;
+        font-weight: 300;
+      }
+    }
+    .Right_Side_Wrapper {
+      h2 {
+        font-size: clamp(18px ,5vw,20px);
+        font-weight: 400;
+        color: #e0aaff;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      th {
+        background-color:   rgba(36, 0, 70, 1);
+      
+      }
+      td {
+        color: #fff;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+button {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+}
+
+button::before,
+button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+button::before {
+  left: -10px;
+  background: #240046;
+}
+
+button::after {
+  right: -10px;
+  background: #5a189a;
+}
+
+button:hover::before,
+button:hover::after {
+  width: 58%;
+}
+
+button:hover span {
+  color: #e0aaff;
+  transition: 0.3s;
+}
+
+button span {
+  color: #03045e;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+}
+
+
